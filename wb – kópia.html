@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Môj Web</title>
+	<style>
+		body {
+			background-image: url('https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626108_960_720.jpg');
+			background-size: cover;
+			background-position: center;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			animation: bg-animation 20s linear infinite;
+		}
+
+		@keyframes bg-animation {
+			0% {
+				background-position: 0 0;
+			}
+			100% {
+				background-position: 100% 100%;
+			}
+		}
+
+		h1 {
+			color: #fff;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		button {
+			background-color: #4CAF50;
+			border: none;
+			color: #fff;
+			padding: 16px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 50px auto;
+			cursor: pointer;
+			border-radius: 25px;
+			transition: background-color 0.3s ease;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+
+		.right {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+
+		.red {
+			background-color: #ff0000;
+			color: #fff;
+			border-radius: 25px;
+			padding: 16px 32px;
+			text-decoration: none;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+		}
+
+		.red:hover {
+			background-color: #e60000;
+		}
+
+		.yellow {
+			background-color: #f7dc6f;
+			color: #333;
+			border-radius: 25px;
+			padding: 16px 32px;
+			text-decoration: none;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+		}
+
+		.yellow:hover {
+			background-color: #f0c64b;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Vitajte na mojej stránke!</h1>
+	<button type="button" onclick="alert('Super!')" class="yellow">Tlačidlo 1</button>
+	<button type="button" onclick="alert('Duper!')" class="yellow">Tlačidlo 2</button>
+	<button type="button" onclick="alert('Kúpil som si skúter!')" class="yellow">Tlačidlo 3</button>
+	<a href="https://www.youtube.com/watch?v=zBnSqr5R0K0" class="right red">YouTube</a>
+</body>
+</html>
